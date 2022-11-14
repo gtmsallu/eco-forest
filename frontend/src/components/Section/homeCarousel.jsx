@@ -47,7 +47,7 @@ if (res.status === 422 || !data) {
               className="d-block w-100"
               alt="carouselimg"
               height="500"
-              src="/assets/images/image-1.png"
+              src="/assets/images/image-1.jpg"
             />
           </Carousel.Item>
           <Carousel.Item>
@@ -56,11 +56,11 @@ if (res.status === 422 || !data) {
               alt="carouselimg1"
 
               height="500"
-              src="/assets/images/image-2.png"
+              src="/assets/images/image-2.jpg"
             />
           </Carousel.Item>
         </Carousel>
-        <div className="container position-relative" >
+        {/* <div className="container position-relative" >
           <div className="col-md-6 booking-form px-lg-4 px-3 py-3">
             <h6 className="text-center fw-bold">Book coating for your Car Now!!</h6>
             <form method="POST">
@@ -79,7 +79,7 @@ if (res.status === 422 || !data) {
               <button className="btn w-100 btn-secondary btn-book" value="submit" name="submit" onClick={postBooklist}>Request for call</button>
             </form>
           </div>
-        </div>
+        </div> */}
 
         
       </div>

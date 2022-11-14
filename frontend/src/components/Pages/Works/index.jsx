@@ -33,7 +33,7 @@ const WorksPage = () => {
   useEffect(() => {
     getWorkData();
 
-  }, [])
+  }, [getWorkData])
   useEffect(() => {
     const bodyClassList = document.body.classList;
     const bodyBg = bodyClassList.contains("bg-white");

@@ -37,15 +37,15 @@ if(!data || res.status===402){
   return (
     <>
       <footer class="py-3 text-white">
-        <div class="container">
+        <div class="container" >
           <div class="row pt-3">
             <div class="col-md-8">
               <div class="row mb-md-4">
-                <div class="brand d-flex">
-                  <img src="/logo.png" alt="" />
+                <div class="d-flex  img-fluid ">
+                  <img src="/logo-white.png" height={80} width={100} alt="" />
                   <div class="brand-text">
-                    PARADISE
-                    <span class="d-block">MOTORS NEPAL</span>
+                    
+                    <span class="d-block"></span>
                   </div>
                 </div>
               </div>
@@ -54,26 +54,63 @@ if(!data || res.status===402){
                   <div class="d-flex align-items-center mb-1">
                     <i class="fa fa-map-marker-alt me-1"></i>
                     <p class="ms-2 m-0">
-                      Rakshya Marg, near TATA Motors <br />
-                      Pokhara, Nepal
+                      Bharatpur <br />
+                      Chitwan, Nepal
                     </p>
                   </div>
                   <div class="d-flex align-items-center mb-1">
                     <i class="fa fa-phone-alt"></i>
-                    <p class="ms-2 m-0">+977- 9856015947</p>
+                    <p class="ms-2 m-0">+977- 9867682973</p>
                   </div>
                   <div class="d-flex align-items-center mb-2">
                     <i class="fa fa-envelope"></i>
-                    <p class="ms-2 m-0">paradisemotorsnepal777@gmail.com</p>
+                    <p class="ms-2 m-0">ecoforestnepal@gmail.com</p>
                   </div>
+
+
+
+
+
+
+            <form method="POST">
+  
+  <div>
+      <div className="form-group">
+        <label htmlFor="inputEmail">Email</label>
+        <input
+          type="email"
+          id="inputEmail"
+          name="subscribeMail"
+          value={subscribeMail}
+          onChange={(e)=>{setsubscribeMail(e.target.value)}}
+          className="form-control"
+          placeholder="someone@example.com"
+          required
+        />
+      </div>
+  </div>
+  <div className="form-group pb-4">
+    <button
+      className="btn btn-success px-5 m-auto " value="submit" name="submit" onClick={postSubscribeMail}
+    >
+      Subscribe
+    </button>
+  </div>
+
+</form>
+
+            
                 </div>
                 <div class="col-md-5 mt-lg-4">
-                  <h6 class="fw-bold">Links</h6>
+                  <h6 class="fw-bold">Terms</h6>
                   <div class="links_ mb-2">
                     <Link to="/privacy">Privacy Policy</Link>
-                    <a onClick={handleShow} href="#/">
+                    <Link to="/terms">Terms of Service</Link>
+                    <Link to="/about">About Us</Link>
+                    {/* <a onClick={handleShow} href="#/">
                       Subscribe for Newsletter
-                    </a>
+                    </a> */}
+                    
                   </div>
                 </div>
               </div>
@@ -91,7 +128,7 @@ if(!data || res.status===402){
               <div class="mt-2 text-center">
                 <iframe
                   title="find-on-map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.01268136886!2d83.996827!3d28.2069273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995956a9c6b9e37%3A0x850e2fbb3fead6ee!2sParadise%20Motors%20Nepal!5e0!3m2!1sen!2snp!4v1621939168400!5m2!1sen!2snp"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226116.63341412626!2d84.42776009999999!3d27.684157200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb37e078d531%3A0x973f22922ea702f7!2sBharatpur%2044200!5e0!3m2!1sen!2snp!4v1667758588426!5m2!1sen!2snp"
                   width="100%"
                   style={{ height: "260px", border: 0 }}
                   allowFullScreen=""
@@ -102,13 +139,13 @@ if(!data || res.status===402){
           </div>
         </div>
 
-        <p class="text-center text-white">© Paradise Motors Nepal 2021</p>
+        <p class="text-center text-white">© Eco Forest 2022</p>
         <p class="text-center text-white">
           Designed & Developed By <b> WalkDigital Soft.</b>{" "}
         </p>
       </footer>
       
-      <form method="POST">
+      {/* <form method="POST">
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -142,7 +179,7 @@ if(!data || res.status===402){
           </button>
         </Modal.Footer>
       </Modal>
-      </form>
+      </form> */}
 
     </>
   );

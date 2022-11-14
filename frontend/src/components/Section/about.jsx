@@ -11,22 +11,22 @@ const About = () => {
 
   return (
     <>
-      <div class="p-lg-4 about-us">
-        <div class="container p-4 ">
-          <div class="row p-4">
-            <h2 class="text-white fw-bold mb-4">About Us</h2>
+      <div class="p-lg-6 " style={{backgroundColor:'#fafafa'}}>
+        <div class="container p-auto ">
+          <div class="row ">
+            {/* <h2 class="text-white fw-bold mb-4"></h2> */}
             <div class="col-md-6">
-              <img src="/assets/images/image-2.png" alt="" class="img-fluid" />
+              <img src="/assets/images/contentimg.jpg" alt="" class="img-fluid" />
             </div>
             <div class="col-md-6 my-auto px-md-4">
-              <h2 class="border-bottom mb-3 fw-bold">
-                Welcome to Paradise Motors Nepal
-              </h2>
-              <p class="text-white fw-bold" style={{ fontSize: "1.2rem" }}>
-                An authorized Dealer of Motors Nepal i.e The First Company which
-                introduce the Concept of Autodetailing & Ceramic Coating in
-                Nepal.. We are Providing Facilities of Ceramic Coating USA Based
-                Technology for Life Time Warranty.
+              <h1 class=" mb-4 fw-bold">
+              Decorate your home with plants              </h1>
+              <p style={{ fontSize: "1.3rem" }}>
+              As the nights get longer, bring a sense of calm to your bedroom with plants. Hanging plants, like Rapunzel the golden pothos, add interest at different heights and won’t mind a little shade. Susie the snake plant and Pippa the peace lily have striking structure and they release oxygen at night - practical and pretty.
+
+Fill empty corners with a tall, thin plant like Silvy the satin pothos on a mosspole or Phil the philodendron scandens. Minimal floorspace, maximum impact.
+
+Don’t forget your pots. Matching neutral pots will look clean and elegant, while a mix of styles and patterns looks eclectic and fun.
               </p>
             </div>
           </div>
@@ -38,7 +38,7 @@ const About = () => {
           <div class="row p-4">
             <div class="col-md-6 mb-4">
               <h2 class="text-color-1 fw-bold mb-4">
-                Why Paradise Motors Nepal ?
+                Why Eco-Forest Nepal ?
               </h2>
               <p
                 style={{

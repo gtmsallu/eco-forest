@@ -1,12 +1,8 @@
+
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Works = () => {
-
-
-
-   
-
         const [data, setData] = useState([])
         const getWorkData=async ()=>{
           try {
@@ -28,7 +24,7 @@ const Works = () => {
         useEffect(() => {
           getWorkData();
       
-        }, [])
+        }, [getWorkData])
 
     return (
       <>

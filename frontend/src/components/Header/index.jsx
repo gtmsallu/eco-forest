@@ -94,7 +94,8 @@ const RenderMenu=()=>{
         <i className="far fa-user-circle me-2"></i>
         Log Out
       </button>
-    </div>)
+    </div>
+    )
     
     
     ;
@@ -118,16 +119,16 @@ const RenderMenu=()=>{
 
   return (
     <>
-      <header class="navbar fixed-top navbar-expand-lg justify-content-center justify-content-md-between py-3 mb-4">
-        <div class="container">
+      <header class="navbar fixed-top navbar-expand-lg  justify-content-md-between py-1  mb-2 ">
+        <div class="container ">
           <Link
             to="/"
-            class="brand d-flex align-items-center mb-2 mb-md-0 text-dark text-decoration-none"
+            class=" d-flex align-items-center mb-1 mb-md-0 text-dark text-decoration-none"
           >
-            <img src="/logo.png" alt="" />
+            <img  src="/logo.png" height="80" width="100"   alt="" />
             <div class="brand-text">
-              PARADISE
-              <span class="d-block">MOTORS NEPAL</span>
+              <br></br>
+              <span class="d-block mt-4 text-dark">Forest at home</span>
             </div>
           </Link>
 
@@ -150,11 +151,14 @@ const RenderMenu=()=>{
               
               <li class="nav-link px-2 link-light">
                 <NavLink to="/works">
-                  Works
+                  Indoor Plants
                 </NavLink>
               </li>
               <li class="nav-link px-2 link-light">
-                <NavLink to="/teams">Teams</NavLink>
+                <NavLink to="/pots">Pots</NavLink>
+              </li>
+              <li class="nav-link px-2 link-light">
+                <NavLink to="/teams">Plant Information</NavLink>
               </li>
               <li class="nav-link px-2 link-light">
                 <NavLink to="/contact">Contact</NavLink>
@@ -166,7 +170,7 @@ const RenderMenu=()=>{
           </div>
         </div>
       </header>
-      <form method="POST">
+       <form method="POST">
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <h5 className="fw-bold m-auto"> Login</h5>
@@ -191,7 +195,7 @@ const RenderMenu=()=>{
           <button className="btn btn-dark px-5 m-auto modal_btn" name="submit" value="submit" onClick={postLogin}> Login</button>
         </Modal.Footer>
       </Modal>
-      </form>
+      </form> 
 
       <ToastContainer />
           

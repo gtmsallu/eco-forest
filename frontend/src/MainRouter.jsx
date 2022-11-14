@@ -22,13 +22,14 @@ import ReviewsPage from "./components/Pages/Reviews";
 
 import NotFound from "./components/NotFound";
 import { createContext, useReducer } from "react";
+import Discover from "./components/Section/discover";
 
 export const  UserContext = createContext();
 const Routing=()=>{
     return(
         <Switch>
         <Route exact path="/">
-            <HomeCarousel />
+            <Discover />
             <About />
             <Works />
             <Clients />

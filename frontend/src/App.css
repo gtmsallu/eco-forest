@@ -137,18 +137,18 @@ main {
 
 .featuresList div::before {
   counter-increment: num;
-  content: counter(num);
-  border-radius: 50%;
+  content: ">";
+  border-radius: 80%;
   position: absolute;
   width: 2rem;
   height: 2rem;
   left: -2.5rem;
-  font-size: 1.5rem;
-  line-height: 1.2rem;
+  font-size: 1.9rem;
+  line-height: 1.5rem;
   background: white;
-  color: #d1002c;
+  color: #6caf45;
   text-align: center;
-  border: 4px #d1002c solid;
+
 }
 
 .featuresList p {
@@ -189,7 +189,7 @@ main {
 /* footer */
 
 footer {
-  background: #004468;
+  background: #6caf45;
 }
 
 footer .brand-text {
@@ -197,7 +197,7 @@ footer .brand-text {
 }
 
 footer i {
-  color: #5dc8c9;
+  color: #f2f5f5;
 }
 
 .links_ {
@@ -205,13 +205,14 @@ footer i {
   position: relative;
   display: flex;
   flex-direction: column;
+  
 }
 .links_ a {
   color: white;
   text-decoration: none;
 }
 .links_ a::before {
-  color: #000;
+  color: rgb(253, 249, 249);
   font-weight: bold;
   position: absolute;
   left: -1rem;
