@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "homepage":"http://gtmsallu.github.io/eco-forest",
   "scripts": {
     "predeploy": "cd frontend && npm run build",
     "deploy": "cd frontend && gh-pages -d build",
